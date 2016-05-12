@@ -27,9 +27,19 @@
 		<script type="text/javascript" src="js/wow.js"></script>
 		<script type="text/javascript" src="js/classie.js"></script>
 
+
+		<!--[if lt IE 9]>
+		    <script src="js/respond-1.1.0.min.js"></script>
+		    <script src="js/html5shiv.js"></script>
+		    <script src="js/html5element.js"></script>
+		<![endif]-->
+
+
+
 		<!-- amCharts javascript sources -->
 		<script type="text/javascript" src="http://www.amcharts.com/lib/3/amcharts.js"></script>
 		<script type="text/javascript" src="http://www.amcharts.com/lib/3/pie.js"></script>		
+
 
 		<script type="text/javascript">
 			AmCharts.makeChart("chartdiv",
@@ -87,14 +97,9 @@
 		</script>		
 
 
-		<!--[if lt IE 9]>
-		    <script src="js/respond-1.1.0.min.js"></script>
-		    <script src="js/html5shiv.js"></script>
-		    <script src="js/html5element.js"></script>
-		<![endif]-->
 
 	</head>
-	<body>
+	<body id="bodyi">
 	<div style="overflow:hidden;">
 	<header class="header" id="header"><!--header-start-->
 		<div class="container">
@@ -473,7 +478,7 @@
 
 	                <div class="contact-info-box email clearfix">
 	                	<h3><i class="fa-pencil"></i>email:</h3>
-	                	<span><a href="sales@eagleadmin.co.za?Subject=Try now or join" target="_top">sales@eagleadmin.co.za</a></span>
+	                	<span><a href="mailto:sales@eagleadmin.co.za?Subject=Try now or join" target="_top">sales@eagleadmin.co.za</a></span>
 	                </div>
 	            	<div class="contact-info-box hours clearfix">
 	                	<h3><i class="fa-clock-o"></i>Hours:</h3>
@@ -522,7 +527,7 @@
 	    });
 	</script>
 
-	  <script>
+ 	  <script>
 	    wow = new WOW(
 	      {
 	        animateClass: 'animated',
@@ -530,7 +535,7 @@
 	      }
 	    );
 	    wow.init();
-	    document.getElementById('').onclick = function() {
+	    document.getElementById('bodyi').onclick = function() {
 	      var section = document.createElement('section');
 	      section.className = 'wow fadeInDown';
 	      this.parentNode.insertBefore(section, this);
