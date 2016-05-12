@@ -27,6 +27,65 @@
 		<script type="text/javascript" src="js/wow.js"></script>
 		<script type="text/javascript" src="js/classie.js"></script>
 
+		<!-- amCharts javascript sources -->
+		<script type="text/javascript" src="http://www.amcharts.com/lib/3/amcharts.js"></script>
+		<script type="text/javascript" src="http://www.amcharts.com/lib/3/pie.js"></script>		
+
+		<script type="text/javascript">
+			AmCharts.makeChart("chartdiv",
+				{
+					"type": "pie",
+					"angle": 42.3,
+					"balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+					"depth3D": 15,
+					"titleField": "category",
+					"valueField": "column-1",
+					"allLabels": [],
+					"balloon": {},
+					"titles": [],
+					"dataProvider": [
+						{
+							"category": "Processing",
+							"column-1": "0.92"
+						},
+						{
+							"category": "Storage",
+							"column-1": "1.01"
+						},
+						{
+							"category": "Badwidth",
+							"column-1": "0.01"
+						},
+						{
+							"category": "Security",
+							"column-1": "0.11"
+						},
+						{
+							"category": "Backups",
+							"column-1": "1.01"
+						},
+						{
+							"category": "Banking",
+							"column-1": "0.49"
+						},
+						{
+							"category": "Maintainence",
+							"column-1": "0.64"
+						},
+						{
+							"category": "Marketing",
+							"column-1": "0.1"
+						},
+						{
+							"category": "Development",
+							"column-1": "0.11"
+						}
+					]
+				}
+			);
+
+		</script>		
+
 
 		<!--[if lt IE 9]>
 		    <script src="js/respond-1.1.0.min.js"></script>
@@ -207,7 +266,7 @@
 						</tr>
 						<tr>
 							<td>Rarely make improvements.</td>
-							<td>Continuously improving the app.</td>
+							<td>We want to hear from you. We look forward to colloborating around new features.</td>
 						</tr>
 						<tr>
 							<td>&nbsp;</td>
@@ -220,6 +279,38 @@
 	        </div>
 		</div>
 	</section><!--main-section alabaster-end-->
+
+
+	<section class="section  "><!--main-section alabaster-start-->
+		<div class="container">
+	    	<div class="row">
+ 	        	<div class="col-lg-10 col-sm-11 featured-work">
+	            	<h2>Pricing</h2>
+	            	<!-- <P class="padding-b">Eagle Admin charges R5 per student per month. We do not charge for students that have left you.</P> -->
+					<table class="table table-striped">
+						<tr>
+							<th>Charge</th>
+							<th>Description</th>
+						</tr>
+						<tr>
+							<td>R 5.00</td>
+							<td>Per student per month.</td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+						</tr>
+					</table>
+
+	            	<h3>How is that R5 spent?</h3>
+					<div id="chartdiv" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>
+
+	            	
+	            </div>
+	        </div>
+		</div>
+	</section><!--main-section alabaster-end-->
+
 
 
 
