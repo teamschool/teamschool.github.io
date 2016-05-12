@@ -92,10 +92,11 @@ p{
 .header{
 	text-align:center;
 	background:url(../img/pw_maze_black_2X.png) left top repeat;
-	padding:280px 0;
+	padding:30px 0;
 }
 .logo{
-	width:130px;
+	width:512px;
+	height:512px;
 	margin:0 auto 35px;
 }
 .header h1{
@@ -118,7 +119,7 @@ p{
 	display:inline-block;
 	font-family: 'Montserrat',sans-serif;
 	font-size:14px;
-	color: #bcbcbc;
+	color: #fff;
 	text-transform: uppercase;
 	font-weight: 400;
 	margin:0 5px 0 0;
